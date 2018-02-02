@@ -1,0 +1,17 @@
+@startuml
+package "Host OS" {
+  node "Vagrant" {
+    [Ubuntu] as VM
+  }
+  [vagrant_data]
+  [VagrantFile]
+  [bootstrap]
+  Vagrant -right-> vagrant_data
+  note right of bootstrap: Shell Provisioner
+  note top of Vagrant: Provisioned on VirtualBox
+  note right of vagrant_data
+    Shared storage between
+    host and vm
+  end note
+}
+@enduml

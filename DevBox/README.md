@@ -1,0 +1,25 @@
+## Vagrant Box Details
+  - Base Image: Ubuntu 16.04 LTS
+  - Dependencies Provisioned
+    - PyEnv
+    - Python3
+    - VirtualEnv **developEnv**
+      - matplotlib
+      - scipy
+      - sklearn
+      - dat_struct_py
+      - requests
+      - jupyter
+      - seaborn
+      - tensorflow
+      - keras
+      - pandas
+    - Java 8
+    - JUnit
+    - Maven
+    - Scala
+  - Exposed Ports
+    - VM: 8080 -> Host: 8776 at 127.0.0.1
+    - VM: 8888 -> Host: 8778 at 127.0.0.1
+  - Allotted Memory
+    - 1024 MB
