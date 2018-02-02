@@ -21,7 +21,7 @@ Vagrant Setup Scripts to bring up Virtual VMs with different attributes
 ## Generic Design
 ![Could not display. Check design/ComponentDiag.png](/design/ComponentDiag.png?raw=true "Component Diagram")
 
-## Vagrant Scripts Inline
+## Vagrant Boxes
   - DevBox
     - Java, Python3, PyEnv, Junit, Scala
     - Base Box: Ubuntu 16.04 LTS
