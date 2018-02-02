@@ -43,5 +43,5 @@ echo "----------------------------"
 echo "Install and configure git"
 echo "----------------------------"
 sudo apt-get -y -q install git
-git config --global user.name "rachit.ranjan16" #Enter Git Username here - MANDATORY
-git config --global user.email "rachit.ranjan93@gmail.com" #Enter Git Email here - MANDATORY
+git config --global user.name "" #Enter Git Username here - MANDATORY
+git config --global user.email "" #Enter Git Email here - MANDATORY
