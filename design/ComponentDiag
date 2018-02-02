@@ -3,10 +3,11 @@ package "Host OS" {
   node "Vagrant" {
     [Ubuntu] as VM
   }
+  [bootstrap]
   [vagrant_data]
   [VagrantFile]
-  [bootstrap]
-  Vagrant -right-> vagrant_data
+  Vagrant -left-> vagrant_data
+  Vagrant -down-> ExposedPorts
   note right of bootstrap: Shell Provisioner
   note top of Vagrant: Provisioned on VirtualBox
   note right of vagrant_data
