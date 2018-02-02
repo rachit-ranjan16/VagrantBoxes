@@ -8,19 +8,22 @@ Vagrant Setup Scripts to bring up Virtual VMs with different attributes
 ## Why Vagrant
   - [Hashicorp puts it the best](https://www.vagrantup.com/intro/index.html)
 
-## Why not Vagrant Boxes instead of Scipts?
+## Why not Vagrant Boxes instead of Scripts?
   - Vagrant Box Images are ready made images with Dependencies installed.
     - Unlikely for a user to find every single dependency
     - Maintenance of local installations becomes a chore
-    - Managing Images and pushing upgrades on base image isn't for everyone
-  - This Repo contains Vagrant Boxes designed for specific needs
-    - Easy to build on top of base work
+    - Managing Images and pushing upgrades on base images isn't for everyone
+  - Repo contains Vagrant Boxes with a balance of generic and specific
+    - Building from scratch is the best(That's how I came around building these) but having a working reference just saves time.
     - Modifications are easy to bring up again and again
-      - Trusty `vagrant up` to the rescue
+      - Trusty `vagrant up` to the rescue after modifications
 
-## Vagrant Scripts Inline
+## Generic Design
+![Could not display. Check design/ComponentDiag.png](/design/ComponentDiag.png?raw=true "Component Diagram")
+
+## Vagrant Boxes
   - DevBox
-    - Java, Python3, PyVenv, Junit, Scala
+    - Java, Python3, PyEnv, Junit, Scala
     - Base Box: Ubuntu 16.04 LTS
 
 ## Resources

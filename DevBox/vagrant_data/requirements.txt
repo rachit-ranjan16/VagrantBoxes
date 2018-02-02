@@ -1,0 +1,10 @@
+matplotlib
+scipy
+sklearn
+dat_struct_py
+requests
+jupyter
+seaborn
+tensorflow
+keras
+pandas
