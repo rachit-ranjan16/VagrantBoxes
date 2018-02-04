@@ -1,0 +1,24 @@
+@startuml
+package "Host OS" {
+  node "WebServerVM" {
+    [Nginx]
+  }
+  database "DbVM" {
+    [MySQL] as Db
+  }
+  node "ApplicationVM" {
+    [Django] as DjVM
+  }
+
+  [db_bootstrap]
+  [django_bootstrap]
+  [nginx_bootstrap]
+  [vagrant_data]
+  vagrant_data -> WebServerVM
+  vagrant_data -> DbVM
+  vagrant_data -> ApplicationVM
+  [NginxVagrantFile]
+  [MySQLDbVagrantFile]
+  [DjangoVagrantFile]
+}
+@enduml

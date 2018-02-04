@@ -1,4 +1,6 @@
+
 ## Vagrant Box Details
+  - VERSION: 0.0.2
   - Base Image: Ubuntu 16.04 LTS
   - Dependencies Provisioned
     - PyEnv

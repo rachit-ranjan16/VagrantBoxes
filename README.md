@@ -19,7 +19,7 @@ Vagrant Setup Scripts to bring up Virtual VMs with different attributes
       - Trusty `vagrant up` to the rescue after modifications
 
 ## Generic Design
-![Could not display. Check design/ComponentDiag.png](/design/ComponentDiag.png?raw=true "Component Diagram")
+![Could not display. Check design/GenericBoxComponentDig.png](/design/GenericBoxComponentDig.png?raw=true "Component Diagram")
 
 ## Vagrant Boxes
   - DevBox
