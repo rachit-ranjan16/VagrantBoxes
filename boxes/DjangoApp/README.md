@@ -2,6 +2,8 @@
 Django is a python based framework for developing robust web applications with minimal annoyances
 [Check out Django](https://www.djangoproject.com/)
 
+VERSION=0.0.3
+
 ## Design
 - Nginx, Django and MySQL deployed on three different Vagrant Ubuntu Instances
   - All three instances have preconfigured IPs
