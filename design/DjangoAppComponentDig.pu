@@ -3,22 +3,27 @@ package "Host OS" {
   node "WebServerVM" {
     [Nginx]
   }
-  database "DbVM" {
-    [MySQL] as Db
+  node "DbVM" {
+    database "DB" {
+      [MySQL] as Db
+    }
   }
   node "ApplicationVM" {
     [Django] as DjVM
   }
-
-  [db_bootstrap]
-  [django_bootstrap]
-  [nginx_bootstrap]
   [vagrant_data]
-  vagrant_data -> WebServerVM
-  vagrant_data -> DbVM
-  vagrant_data -> ApplicationVM
+  WebServerVM -up-> ExposedHTTPPort
+  WebServerVM -down-> ApplicationVM
+  ApplicationVM -down-> DbVM
+  vagrant_data ..> WebServerVM
+  vagrant_data ..> DbVM
+  vagrant_data ..> ApplicationVM
   [NginxVagrantFile]
   [MySQLDbVagrantFile]
   [DjangoVagrantFile]
+  [db_bootstrap]
+  [django_bootstrap]
+  [nginx_bootstrap]
+
 }
 @enduml
