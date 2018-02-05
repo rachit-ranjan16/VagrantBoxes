@@ -13,6 +13,6 @@ VERSION=0.0.3
   - Only Nginx VM is accessible through the host OS via a mapped port
 - Shared folder/git can be used to put different pieces of code in different machines
 
-[Component Diagram](/design/DjangoApoComponentDig.png?raw=true "Nginx Django MySQL")
+[Component Diagram](/design/DjangoAppComponentDig.png?raw=true "Nginx Django MySQL")
 ## Vagrant Box Details
   - VERSION: 0.0.1
