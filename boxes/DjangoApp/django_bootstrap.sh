@@ -4,6 +4,12 @@ echo "----------------------------"
 sudo apt-get -y -q update
 #sudo apt-get upgrade
 echo "----------------------------"
+echo "Install and Configure Vim"
+echo "----------------------------"
+sudo apt-get install vim 
+sudo cp /vagrant_data/.vimrc /home/ubuntu
+sudo cp /vagrant_data/.vimrc /root/
+echo "----------------------------"
 echo "Install pip"
 echo "----------------------------"
 sudo apt-get -y -q install python3-pip
@@ -23,5 +29,5 @@ source django/bin/activate
 echo "----------------------------"
 echo "Install Dependencies"
 echo "----------------------------"
-pip install django 
+pip install django
 sudo updatedb
