@@ -18,7 +18,7 @@ echo "Install MySql Client"
 echo "----------------------------"
 sudo apt-get -y -q install mysql-client
 echo "----------------------------"
-echo "Install pyenv"
+echo "Install venv"
 echo "----------------------------"
 sudo apt-get -y -q install python3-venv
 echo "----------------------------"

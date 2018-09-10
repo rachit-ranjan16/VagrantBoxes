@@ -1,8 +1,9 @@
 
 ## Vagrant Box Details
-  - VERSION: 0.0.2
-  - Base Image: Ubuntu 16.04 LTS
+  - VERSION: 0.1.0
+  - Base Image: Ubuntu 18.04 LTS
   - Dependencies Provisioned
+    - vim with custom .vimrc
     - PyEnv
     - Python3
     - VirtualEnv **developEnv**
@@ -20,8 +21,11 @@
     - JUnit
     - Maven
     - Scala
+    - Elixir
   - Exposed Ports
     - VM: 8080 -> Host: 8776 at 127.0.0.1
     - VM: 8888 -> Host: 8778 at 127.0.0.1
-  - Allotted Memory
-    - 1024 MB
+  - Provisioned Memory
+    - 2048 MB
+  - Provisioned Virtual Cores 
+    - 4 
