@@ -3,7 +3,8 @@ Vagrant Setup Scripts to bring up Virtual VMs with different attributes
 
 ## Prerequisites
   - [VirtualBox Installation](https://www.virtualbox.org/wiki/Downloads)
-  - [Vagrant Installation](https://www.vagrantup.com/downloads.html)
+  - [Vagrant Installation](https://www.vagrantup.com/downloads.html)*
+  - Plug in your GitHub Details in boxes/[BoxName]/[*]bootstrap.sh : helper comments added 
 
 ## Why Vagrant
   - [Hashicorp puts it the best](https://www.vagrantup.com/intro/index.html)
@@ -17,14 +18,20 @@ Vagrant Setup Scripts to bring up Virtual VMs with different attributes
     - Building from scratch is the best(That's how I came around building these) but having a working reference just saves time.
     - Modifications are easy to bring up again and again
       - Trusty `vagrant up` to the rescue after modifications
+      - For instance vim in all the boxes in this repo si supplmented by a custom .vimrc that makes life a lot easier 
 
 ## Generic Design
 ![Could not display. Check design/GenericBoxComponentDig.png](/design/GenericBoxComponentDig.png?raw=true "Component Diagram")
 
 ## Vagrant Boxes
   - DevBox
-    - Java, Python3, PyEnv, Junit, Scala
-    - Base Box: Ubuntu 16.04 LTS
+    - Java, PyEnv, Junit, Scala, Erlang, Elixir
+    - Base Box: Ubuntu 18.04 LTS
+  - DjangoApp 
+    - Multi Node Setup 
+      - DB Node: MySQL Server
+      - Django Node: pip,venv, Django MySQL Client
+      - Nginx Node: Nginx 
 
 ## Resources
   - [Getting Started with Vagrant](https://www.vagrantup.com/intro/getting-started/index.html)

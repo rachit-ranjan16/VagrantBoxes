@@ -8,8 +8,11 @@ echo "----------------------------"
 echo "Install and Configture vim"
 echo "----------------------------"
 sudo apt-get -y -q install vim
-sudo cp /vagrant_data/.vimrc /home/ubuntu
+sudo apt-get -y -q install dos2unix
+sudo cp /vagrant_data/.vimrc /home/vagrant
 sudo cp /vagrant_data/.vimrc /root/
+sudo dos2unix  /home/vagrant/.vimrc
+sudo dos2unix  /root/.vimrc
 echo "----------------------------"
 echo "Install Java, JUnit and Maven"
 echo "----------------------------"
@@ -35,10 +38,17 @@ echo "Install Specified Dependencies in VirtualEnv"
 echo "----------------------------"
 pip install -r /vagrant_data/requirements.txt
 echo "----------------------------"
-echo "Install scala"
+echo "Install Scala"
 echo "----------------------------"
 sudo apt-get -y -q install scala
 scala -version
+echo "----------------------------"
+echo "Install Elixir"
+echo "----------------------------"
+wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo dpkg -i erlang-solutions_1.0_all.deb
+sudo apt-get -y -q update
+sudo apt-get -y -q install esl-erlang
+sudo apt-get -y -q install elixir
 echo "----------------------------"
 echo "Install and configure git"
 echo "----------------------------"

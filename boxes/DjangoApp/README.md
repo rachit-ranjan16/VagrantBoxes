@@ -2,8 +2,6 @@
 Django is a python based framework for developing robust web applications with minimal annoyances
 [Check out Django](https://www.djangoproject.com/)
 
-VERSION=0.0.3
-
 ## Design
 - Nginx, Django and MySQL deployed on three different Vagrant Ubuntu Instances
   - All three instances have preconfigured IPs
@@ -15,4 +13,25 @@ VERSION=0.0.3
 
 ![Component Diagram](/design/DjangoAppComponentDig.png?raw=true "Nginx Django MySQL")
 ## Vagrant Box Details
-  - VERSION: 0.0.1
+  - VERSION: 0.1.0
+  - Base Image: Ubuntu 18.04 LTS 
+  - DB
+    - MySQL Server 
+    - Provisioned Memory 
+      - 512 MB
+    - Provisioned Virtual Cores 
+      - 4 
+  - Django 
+    - pip 
+    - django 
+    - pyenv 
+    - Provisioned Memory 
+      - 1024 MB
+    - Provisioned Virtual Cores 
+      - 4
+  - Nginx 
+    - nginx 
+    - Provisioned Memory
+      - 512 MB 
+    - Provisioned Cores 
+      - 2 
