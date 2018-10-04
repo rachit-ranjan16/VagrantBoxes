@@ -32,6 +32,9 @@ Vagrant Setup Scripts to bring up Virtual VMs with different attributes
       - DB Node: MySQL Server
       - Django Node: pip,venv, Django MySQL Client
       - Nginx Node: Nginx 
+  - ElixirBox 
+    - Standalone Elixir Setup 
+      - Faster to bring up than DevBox when Elixir is the only focus 
 
 ## Resources
   - [Getting Started with Vagrant](https://www.vagrantup.com/intro/getting-started/index.html)
