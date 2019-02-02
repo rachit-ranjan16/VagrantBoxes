@@ -30,7 +30,7 @@ sudo apt-get -y -q install python3-venv
 echo "----------------------------"
 echo "Create and Activate Virtual Environment"
 echo "----------------------------"
-pyvenv developEnv
+python3 -m venv developEnv
 source developEnv/bin/activate
 pip install --upgrade pip
 echo "----------------------------"

@@ -17,3 +17,11 @@ wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo 
 sudo apt-get -y -q update
 sudo apt-get -y -q install esl-erlang
 sudo apt-get -y -q install elixir
+echo "----------------------------"
+echo "Install Nodejs "
+echo "----------------------------"
+sudo apt-get -yq install nodejs npm
+echo "----------------------------"
+echo "Install PostgreSQL "
+echo "----------------------------"
+sudo apt install postgresql postgresql-contrib
