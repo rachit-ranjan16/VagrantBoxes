@@ -25,7 +25,7 @@ Vagrant.configure("2") do |config|
 	end
   end
   config.vm.define :Nginx do |nginx|
-	nginx.vm.box = "ubuntu/xenial64"
+	nginx.vm.box = "ubuntu/bionic64"
 	nginx.vm.provision :shell, path: "nginx_bootstrap.sh",
 		run: "always"
 	nginx.vm.network :forwarded_port, guest: 80, host: 8787, host_ip: "127.0.0.1"
@@ -37,7 +37,7 @@ Vagrant.configure("2") do |config|
 	end
   end
   config.vm.define :Django do |django|
-	django.vm.box = "ubuntu/xenial64"
+	django.vm.box = "ubuntu/bionic64"
 	django.vm.provision :shell, path: "django_bootstrap.sh",
 		run: "always"
 	django.vm.network :private_network, ip: "172.16.8.6"

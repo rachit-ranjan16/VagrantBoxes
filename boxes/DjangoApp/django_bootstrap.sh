@@ -24,7 +24,7 @@ sudo apt-get -y -q install python3-venv
 echo "----------------------------"
 echo "Create and Activate Virtual Environment"
 echo "----------------------------"
-pyvenv django
+python3 -m venv django
 source django/bin/activate
 echo "----------------------------"
 echo "Install Dependencies"
